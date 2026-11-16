@@ -58,7 +58,45 @@ from qgis.core import (
     QgsWkbTypes
 )
 
+# ============================================================
+# Qt5 / Qt6 COMPATIBILITY
+# Supports older PyQt5 and newer PyQt6-based QGIS versions
+# ============================================================
 
+WidgetAttribute = getattr(Qt, "WidgetAttribute", Qt)
+RenderHint = getattr(QPainter, "RenderHint", QPainter)
+FontWeight = getattr(QFont, "Weight", QFont)
+PenStyle = getattr(Qt, "PenStyle", Qt)
+MouseButton = getattr(Qt, "MouseButton", Qt)
+
+ItemDataRole = getattr(Qt, "ItemDataRole", Qt)
+ItemFlag = getattr(Qt, "ItemFlag", Qt)
+
+SelectionMode = getattr(
+    QAbstractItemView, "SelectionMode", QAbstractItemView
+)
+
+SelectionBehavior = getattr(
+    QAbstractItemView, "SelectionBehavior", QAbstractItemView
+)
+
+StandardButton = getattr(
+    QMessageBox, "StandardButton", QMessageBox
+)
+
+GeometryType = getattr(
+    QgsWkbTypes, "GeometryType", QgsWkbTypes
+)
+
+DistanceUnit = getattr(
+    QgsUnitTypes, "DistanceUnit", QgsUnitTypes
+)
+
+LabelPlacement = getattr(
+    QgsPalLayerSettings,
+    "PredefinedPointPosition",
+    QgsPalLayerSettings
+)
 # ============================================================
 # ANIMATED FjBa METALLIC LOGO
 # Gold / Emerald gradient with animated light sweep
