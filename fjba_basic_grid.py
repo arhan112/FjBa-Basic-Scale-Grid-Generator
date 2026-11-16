@@ -49,6 +49,7 @@ from qgis.PyQt.QtGui import (
 from qgis.gui import QgsMapTool, QgsRubberBand
 
 from qgis.core import (
+    Qgis,
     QgsProject, QgsVectorLayer, QgsFeature,
     QgsGeometry, QgsPointXY, QgsField,
     QgsFillSymbol, QgsSingleSymbolRenderer,
