@@ -1,0 +1,19 @@
+
+[general]
+name=FjBa Basic Scale Grid Generator
+qgisMinimumVersion=3.28
+qgisMaximumVersion=3.99
+description=Create scale-based map grid frames using A0 to A4 paper formats, customizable styling and interactive map placement.
+version=1.1.0
+author=FjBa
+email=YOUR_EMAIL
+about=FjBa Basic Scale Grid Generator is a QGIS tool for creating and managing scale-based rectangular and square map frames. Features include paper formats, orientation, projected CRS support, grid labels, automatic numbering, frame styling and JSON configuration management.
+category=Vector
+icon=icon.png
+experimental=False
+deprecated=False
+tracker=YOUR_ISSUE_TRACKER_URL
+repository=YOUR_SOURCE_CODE_REPOSITORY_URL
+homepage=YOUR_PROJECT_HOMEPAGE_URL
+tags=grid,scale,map,cartography,frame
+hasProcessingProvider=no
