@@ -74,8 +74,7 @@ class FjBaMetallicLogo(QWidget):
         self.setMinimumSize(70, 70)
         self.setMaximumSize(90, 90)
 
-        self.setAttribute(Qt.WA_TranslucentBackground, True)
-
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground, True)
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.advance_animation)
         self.timer.start(35)
@@ -88,7 +87,7 @@ class FjBaMetallicLogo(QWidget):
     def paintEvent(self, event):
 
         painter = QPainter(self)
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
 
         rect = self.rect()
 
