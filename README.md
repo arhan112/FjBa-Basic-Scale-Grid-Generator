@@ -1,6 +1,6 @@
 # FjBa Basic Scale Grid Generator
 
-**Version:** 1.1.0  
+**Version:** 1.1.3  
 **Edition:** Basic  
 **Minimum QGIS version:** 3.28  
 **Platform:** Windows, Linux and macOS  
